@@ -208,7 +208,7 @@ div.bar .content ul li {
   position: relative;
 }
 
-div.bar .content ul li.active::after {
+div.bar .content ul li::after {
   content: "";
 
   width: 100%;
@@ -218,6 +218,15 @@ div.bar .content ul li.active::after {
   bottom: 0;
   left: 0;
 
+  background: #fff;
+
+  transition: all ease-in-out 0.3s;
+}
+
+div.bar .content ul li.active::after,
+div.bar .content ul li:hover::after {
+  content: "";
+
   background: #3bb9e3;
 }
 
@@ -225,9 +234,12 @@ div.bar .content ul li span,
 div.bar .content ul li strong {
   color: #667580;
   font-weight: bold;
+
+  transition: all ease-in-out 0.3s;
 }
 
-div.bar .content ul li.active strong {
+div.bar .content ul li.active strong,
+div.bar .content ul li:hover strong {
   color: #3bb9e3;
 }
 
