@@ -380,6 +380,153 @@ div.wrapper-content aside.profile .images ul li {
 
 div.wrapper-content .timeline {
   flex: 1;
+  background: #fff;
+  margin: 10px 10px 0;
+}
+
+div.wrapper-content .timeline nav {
+  display: flex;
+
+  padding: 10px 15px;
+
+  border-bottom: 1px solid #e6ecf0;
+}
+
+div.wrapper-content .timeline nav a {
+  font-size: 18px;
+  color: #3bb9e3;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline nav a.active {
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 15px;
+
+  border-bottom: 1px solid #e6ecf0;
+}
+
+div.wrapper-content .timeline ul.tweets li img.avatar {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  margin-right: 10px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info-user .tweet-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.wrapper-content .timeline ul.tweets li .info-user .tweet-header strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.wrapper-content
+  .timeline
+  ul.tweets
+  li
+  .info-user
+  .tweet-header
+  strong
+  span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b889a;
+
+  margin-left: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info-user .tweet-header strong + a {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  transition: background ease-in-out 0.3s;
+}
+
+div.wrapper-content
+  .timeline
+  ul.tweets
+  li
+  .info-user
+  .tweet-header
+  strong
+  + a:hover {
+  background: #daf6ff;
+}
+
+div.wrapper-content
+  .timeline
+  ul.tweets
+  li
+  .info-user
+  .tweet-header
+  .more_arrow_down {
+  fill: #7b889a;
+}
+
+div.wrapper-content
+  .timeline
+  ul.tweets
+  li
+  .info-user
+  .tweet-header
+  strong
+  + a:hover
+  .more_arrow_down {
+  fill: #3bb9e3;
+}
+
+div.wrapper-content .timeline ul.tweets li p {
+  font-size: 14px;
+  color: #1f2226;
+
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .tweet-actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets li .tweet-actions a {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: bold;
+  color: #667580;
+
+  margin-left: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets li .tweet-actions a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.tweets li .tweet-actions a img {
+  margin-right: 5px;
 }
 
 /* WRAPPER FOLLOW  */
